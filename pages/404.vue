@@ -1,5 +1,5 @@
 <template>
-  <p>Home page</p>
+  <p>Page not found</p>
 </template>
 
 <script lang="ts">
