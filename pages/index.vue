@@ -1,6 +1,6 @@
 <template>
   <div class="relative">
-    <div id="background" class="relative overflow-hidden bg-scroll bg-no-repeat bg-center bg-cover h-screen" style="background-image: url('/index_background.jpg')">
+    <div id="background" class="relative overflow-hidden bg-scroll bg-no-repeat bg-center bg-cover h-screen" style="background-image: url('/index_bg_1.jpg')">
       <div class="absolute top-0 h-full w-full bg-black bg-opacity-80"></div>
     </div>
     <div id="main" class="text-white content-between flex flex-wrap px-8 md:px-12 pb-8 md:pb-12 justify-around align-middle items-center h-full w-screen absolute top-0">
