@@ -11,7 +11,7 @@
   "dependencies": {
     "@nuxt/typescript-runtime": "^2.0.0",
     "@tailwindcss/postcss7-compat": "^2.0.2",
-    "autoprefixer": "^9",
+    "autoprefixer": "^10",
     "core-js": "^3.6.5",
     "nuxt": "^2.14.6",
     "postcss": "^7",
