@@ -8,7 +8,7 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '#1 Boston startup newsletter' }
+      { hid: 'description', name: 'description', content: 'Boston startup newsletter' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.png' }
