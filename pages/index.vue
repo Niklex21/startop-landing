@@ -12,7 +12,7 @@
         <h1 class="w-full text-red-main font-bold text-6xl md:text-8xl text-center">Coming out soon...</h1>
       </div>
       <div class="w-full">
-        <a href="https://nuoverload.substack.com/subscribe"><h3 class="border-2 border-solid p-4 text-center text-red-main border-red-main uppercase font-bold font-mono text-2xl md:text-4xl">Subscribe to our <br class="block md:hidden"> newsletter here</h3></a>
+        <a href="https://startop.substack.com/subscribe"><h3 class="border-2 border-solid p-4 text-center text-red-main border-red-main uppercase font-bold font-mono text-2xl md:text-4xl">Subscribe to our <br class="block md:hidden"> newsletter here</h3></a>
       </div>
     </div>
   </div>
