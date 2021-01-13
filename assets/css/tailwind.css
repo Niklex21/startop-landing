@@ -9,4 +9,26 @@
     .border-red-main {
         /* border-color: theme('colors.red.main'); */
     }
+
+    @font-face {
+        font-family: Futura;
+        font-weight: 500;
+        src: url(../fonts/futura/FuturaPTMedium.otf) format("otf");
+    }
+
+    @font-face {
+        font-family: Futura;
+        font-weight: 300;
+        src: url(../fonts/futura/FuturaPTLight.otf) format("otf");
+    }
+
+    @font-face {
+        font-family: Futura;
+        font-weight: 700;
+        src: url(../fonts/futura/FuturaPTBold.otf) format("otf");
+    }
+
+    .font-futura {
+        font-family: Futura;
+    }
 }
