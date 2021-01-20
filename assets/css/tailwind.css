@@ -7,7 +7,11 @@
         color: theme('colors.red.main');
     }
     .border-red-main {
-        /* border-color: theme('colors.red.main'); */
+        border-color: theme('colors.red.main');
+    }
+
+    .list-icon {
+        @apply w-8 h-8 stroke-current;
     }
 
     @font-face {
