@@ -16,20 +16,24 @@
         </div>
       </div>
       <div id="screen-2" class="content-between relative flex flex-wrap p-8 md:p-12 justify-around align-middle items-center h-screen w-full">
-        <h2 class="w-full font-bold text-5xl text-center">Why subscribe?</h2>
-        <div class="grid grid-cols-3 gap-4 text-3xl align-middle items-center justify-items-left">
-          <svg class="list-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-          </svg>
-          <span class="col-span-2">Stay up to date with the trends</span>
-          <svg class="list-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-          </svg>
-          <span class="col-span-2">Work opportunities</span>
-          <svg class="list-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-          </svg>
-          <span class="col-span-2">Get inspired!</span>
+        <h2 class="w-full font-bold text-5xl md:text-7xl text-center">Why subscribe?</h2>
+        <div class="md:grid md:grid-cols-2 md:gap-4 text-3xl align-middle items-center justify-items-around">
+          <card titleText="Follow the trends" 
+                mainText="Learn about the most innovative startups in Boston"
+                imagePath="~assets/icons/trend.svg"
+                icon/>
+          <card titleText="Work opportunities" 
+                mainText="Find hot employment opportunities and help early-stage ventures"
+                imagePath="@/assets/icons/work.svg?inline"
+                icon/>
+          <card titleText="Get inspired!" 
+                mainText="Look for inspiration in the best ideas currently on the market"
+                imagePath="@/assets/icons/idea.svg?inline"
+                icon/>
+          <card titleText="Learn by example" 
+                mainText="Take a closer look into practical entrepreneuship"
+                imagePath="@/assets/icons/user_group.svg?inline"
+                icon/>
         </div>
       </div>
     </div>
@@ -37,8 +41,8 @@
 </template>
 
 <script lang="ts">
-  import Vue from 'vue'
+  import Vue from 'vue';
 
-  export default Vue.extend({}) 
+  export default Vue.extend({});
 </script>
 
