@@ -5,7 +5,7 @@
     </div>
     <div class="absolute top-0 w-full">
       <div id="screen-1" class="screen-screen">
-        <div class="flex content-center justify-center items-center md:content-start md:justify-items-start md:justify-between md:items-start w-full h-auto">
+        <div id="header" class="flex content-center justify-center items-center md:content-start md:justify-items-start md:justify-between md:items-start w-full h-auto">
           <img class="block md:hidden h-28 md:h-40" src="/logo.png" alt="logo" />
           <img class="hidden md:block h-20" src="/banner.png" alt="banner" />
           <nav class="hidden uppercase font-bold h-20 md:flex items-center text-2xl">
@@ -20,13 +20,14 @@
         <div id="text" class="w-full">
           <h1 class="w-full font-bold text-6xl md:text-8xl text-center">The Boston Startup Newsletter</h1>
         </div>
-        <div class="w-full h-28 md:h-40 flex flex-wrap content-end">
-          <a class="w-full" href="https://startop.substack.com/subscribe"><h3 class="w-full border-2 border-solid p-4 text-center border-red-main uppercase text-2xl md:text-4xl">Subscribe to our <br class="block md:hidden"> newsletter here</h3></a>
+        <div id="subscription-form" class="w-full overflow-hidden mx-auto flex flex-col content-center justify-center items-center">
+          <iframe src="https://startop.substack.com/embed" width="400" height="80" class="-mb-2" style="background:transparent;" frameborder="0" scrolling="no"></iframe>
+          <span class="w-full text-center text-lg italic">... or you can view it <a class="underline" href="https://startop.substack.com/">here</a>!</span>
         </div>
       </div>
       <div id="screen-2" class="screen-full">
-        <h2 class="w-full font-bold text-5xl mb-4 md:mb-12 md:text-7xl text-center">Why subscribe?</h2>
-        <div class="md:grid md:grid-cols-2 md:gap-4 text-3xl align-middle items-center justify-items-around">
+        <h2 class="w-full font-bold text-5xl mb-4 md:mb-24 md:text-7xl text-center">Why subscribe?</h2>
+        <div class="md:grid md:grid-cols-2 md:gap-8 md:gap-x-12 text-3xl align-middle items-center justify-items-around">
           <!-- TODO: figured out why the hell the SVGs are not displayed -->
           <card-feature 
                 titleText="Follow the Trends" 
@@ -51,7 +52,7 @@
         </div>
       </div>
       <div id="screen-3" class="screen-full">
-        <h2 class="w-full font-bold text-5xl mb-4 md:mb-12 md:text-7xl text-center">Our team</h2>
+        <h2 class="w-full font-bold text-5xl mb-4 md:mb-16 md:text-7xl text-center">Our team</h2>
         <div class="md:grid md:grid-cols-5 md-gap-4 align-middle items-center justify-items-around">
           <card-profile
            imagePath="/profile_pictures/alex_marley.jpg"
