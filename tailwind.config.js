@@ -13,8 +13,11 @@ module.exports = {
         red: {
           'main': '#ED202D'
         },
+      },
+      fontFamily: {
+        'futura-pt': ['futura-pt', 'mono']
       }
-    },
+    }
   },
   variants: {
     extend: {},
