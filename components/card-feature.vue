@@ -3,7 +3,7 @@
         <div class="flex flex-shrink items-center justify-center text-current">
             <img :src="require(`~/assets/${imagePath}`)" class="stroke-current fill-current rounded-md h-16 w-16 md:h-20 md:w-20 lg:h-24 lg:w-24 overflow-hidden" />
         </div>
-        <div class="flex-shrink ml-4 space-y-2">
+        <div class="flex-shrink ml-8 space-y-2">
             <dt class="font-bold text-current text-3xl md:text-4xl lg:text-5xl">{{ titleText }}</dt>
             <dd class="font-normal text-current text-xl md:text-2xl lg:text-3xl">{{ mainText }}</dd>
         </div>

@@ -6,9 +6,9 @@
     <div class="absolute top-0 w-full">
       <div id="screen-1" class="screen-screen">
         <div id="header" class="flex content-center justify-center items-center md:content-start md:justify-items-start md:justify-between md:items-start w-full h-auto">
-          <img class="block md:hidden h-28 md:h-40" src="/logo.png" alt="logo" />
-          <img class="hidden md:block h-20" src="/banner.png" alt="banner" />
-          <nav class="hidden uppercase font-medium h-20 md:flex items-center text-3xl">
+          <img class="block mx-auto lg:hidden h-28 md:h-40" src="/logo.png" alt="logo" />
+          <img class="hidden lg:block h-20" src="/banner.png" alt="banner" />
+          <nav class="hidden uppercase font-medium h-20 lg:flex text-right items-center text-3xl">
             <div class="h-auto w-auto">
               <a class="m-2 font-bold hover-border-b-2" href="https://startop.substack.com">newsletter</a>
               <a class="m-2 hover-border-b-2" href="#screen-2">benefits</a>
@@ -22,7 +22,7 @@
         </div>
         <div id="subscription-form" class="w-full overflow-hidden mx-auto flex flex-col content-center justify-center items-center">
           <iframe src="https://startop.substack.com/embed" width="400" height="80" class="-mb-2" style="background:transparent;" frameborder="0" scrolling="no"></iframe>
-          <span class="w-full text-center text-lg italic">... or you can view it <a class="underline" href="https://startop.substack.com/">here</a>!</span>
+          <span class="w-full text-center text-2xl italic">... or you can read it <a class="underline" href="https://startop.substack.com/">here</a>!</span>
         </div>
       </div>
       <div id="screen-2" class="screen-full">
@@ -48,7 +48,7 @@
       </div>
       <div id="screen-3" class="screen-full">
         <h2 class="w-full font-bold text-5xl mb-4 md:mb-16 md:text-7xl text-center">Our team</h2>
-        <div class="md:grid md:grid-cols-5 md-gap-4 align-middle items-center justify-items-around">
+        <div class="md:flex md:flex-wrap lg:grid lg:grid-cols-5 lg:gap-4 align-middle items-center justify-items-around justify-center">
           <card-profile
            imagePath="profile_pictures/alex_marley.jpg"
            name="Alex Marley"
@@ -56,7 +56,7 @@
           <card-profile
            imagePath="profile_pictures/madyn_singh.jpeg"
            name="Madyn Singh"
-           title="Chief Marketing Officer" />
+           title="CMO" />
           <card-profile
            imagePath="profile_pictures/nina.jpg"
            name="Nina Miller"
@@ -71,30 +71,22 @@
            title="Web developer" />
         </div>
       </div>
-      <div id="screen-footer" class="screen-full bg-black md:grid text-gray-300 md:grid-cols-3">
-        <div class="mb-2">
-          <iframe src="https://startop.substack.com/embed" width="400" height="80" class="-mb-2" style="background:transparent;" frameborder="0" scrolling="no"></iframe>
+      <div id="screen-footer" class="screen-full bg-black md:grid text-gray-300 md:grid-cols-2 lg:grid-cols-3">
+        <div class="mb-6">
+          <iframe src="https://startop.substack.com/embed" width="400" height="130" class="-mb-10 -mx-12 -mt-6" style="background:transparent;" frameborder="0" scrolling="no"></iframe>
         </div>
-        <div class="text-center">
-          <div class="text-2xl w-full mb-2">
-            <a class="hover-border-b-2" href="mailto:">someemail@something.com</a>
+        <div class="hidden lg:block">
+          <img src="/banner.png" class="h-20 mx-auto w-auto" />
+        </div>
+        <div class="text-center md:text-right">
+          <div class="text-2xl mb-2">
+            <a class="hover-border-b-2" href="https://www.linkedin.com/company/thestartop/">linkedin</a>
           </div>
           <div class="text-2xl mb-2">
             <a class="hover-border-b-2" href="https://startop.substack.com">newsletter</a>
           </div>
-          <div class="text-2xl mb-2">
-            <a class="hover-border-b-2" href="https://www.linkedin.com/company/thestartop/">linkedin</a>
-          </div>
-        </div>
-        <div class="hidden text-right md:block">
-          <div class="text-2xl w-full mb-2">
-            <a class="hover-border-b-2" href="#screen-2">benefits</a>
-          </div>
-          <div class="text-2xl mb-2">
-            <a class="hover-border-b-2" href="#screen-3">team</a>
-          </div>
-          <div class="text-2xl mb-2">
-            <a class="hover-border-b-2" href="#screen-footer">contact</a>
+           <div class="text-2xl w-full mb-2">
+            <a class="hover-border-b-2" href="mailto:">someemail@something.com</a>
           </div>
         </div>
       </div>
