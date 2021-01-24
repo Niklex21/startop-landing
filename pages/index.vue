@@ -100,7 +100,7 @@
             <a class="hover-border-b-2" href="https://startop.substack.com">newsletter</a>
           </div>
            <div class="text-2xl w-full mb-2">
-            <a class="hover-border-b-2" href="mailto:marley.al@northeaster.edu">marley.al@northeastern.edu</a>
+            <a class="hover-border-b-2 text-gray-600" href="mailto:">email@coming.here</a>
           </div>
         </div>
       </div>
