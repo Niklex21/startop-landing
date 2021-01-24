@@ -1,4 +1,4 @@
-<template>  
+<template>
   <div class="text-red-main font-futura-pt">
     <div id="background" class="fixed top-0 w-screen overflow-hidden bg-no-repeat bg-center bg-fixed h-screen" style="background-image: url('/index_bg_1.jpg');">
         <div class="absolute top-0 h-screen bg-fixed w-screen bg-black bg-opacity-70"></div>
@@ -43,19 +43,19 @@
         <h2 class="w-full font-bold text-5xl mb-4 md:mb-24 md:text-7xl text-center">Why subscribe?</h2>
         <div class="md:grid md:grid-cols-2 md:gap-8 md:gap-x-12 text-3xl align-middle items-center justify-items-around">
           <card-feature
-                titleText="Follow the Trends" 
+                titleText="Follow the Trends"
                 mainText="Learn about 10 to 15 most innovative startups per week in Boston community."
                 imagePath="icons/trend.svg" />
-          <card-feature 
-                titleText="Job Opportunities" 
+          <card-feature
+                titleText="Job Opportunities"
                 mainText="Gain exposure to internships & job opportunities with the early-stage startups."
                 imagePath="icons/work.svg" />
-          <card-feature 
-                titleText="Join the Community" 
+          <card-feature
+                titleText="Join the Community"
                 mainText="Get a curated list of the entrepreneurial events taking place in Boston each week."
                 imagePath="icons/idea.svg" />
-          <card-feature 
-                titleText="Become Involved" 
+          <card-feature
+                titleText="Become Involved"
                 mainText="Engage with founders and innovators shaping the future in Boston and the world."
                 imagePath="icons/user_group.svg" />
         </div>
@@ -113,4 +113,3 @@
 
   export default Vue.extend({});
 </script>
-
