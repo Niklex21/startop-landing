@@ -13,7 +13,7 @@
               <a class="m-2 font-bold hover-border-b-2" href="https://startop.substack.com">newsletter</a>
               <a class="m-2 hover-border-b-2" href="#screen-2">benefits</a>
               <a class="m-2 hover-border-b-2" href="#screen-3">team</a>
-              <a class="m-2 hover-border-b-2" href="#footer ">contact</a>
+              <a class="m-2 hover-border-b-2" href="#screen-footer">contact</a>
             </div>
           </nav>
         </div>
@@ -28,7 +28,6 @@
       <div id="screen-2" class="screen-full">
         <h2 class="w-full font-bold text-5xl mb-4 md:mb-24 md:text-7xl text-center">Why subscribe?</h2>
         <div class="md:grid md:grid-cols-2 md:gap-8 md:gap-x-12 text-3xl align-middle items-center justify-items-around">
-          <!-- TODO: figured out why the hell the SVGs are not displayed -->
           <card-feature 
                 titleText="Follow the Trends" 
                 mainText="Learn about 10 to 15 most innovative startups per week in Boston community."
@@ -70,6 +69,33 @@
            imagePath="profile_pictures/alex.jpg"
            name="Alex Nikanov"
            title="Web developer" />
+        </div>
+      </div>
+      <div id="screen-footer" class="screen-full bg-black md:grid text-gray-300 md:grid-cols-3">
+        <div class="mb-2">
+          <iframe src="https://startop.substack.com/embed" width="400" height="80" class="-mb-2" style="background:transparent;" frameborder="0" scrolling="no"></iframe>
+        </div>
+        <div class="text-center">
+          <div class="text-2xl w-full mb-2">
+            <a class="hover-border-b-2" href="mailto:">someemail@something.com</a>
+          </div>
+          <div class="text-2xl mb-2">
+            <a class="hover-border-b-2" href="https://startop.substack.com">newsletter</a>
+          </div>
+          <div class="text-2xl mb-2">
+            <a class="hover-border-b-2" href="https://www.linkedin.com/company/thestartop/">linkedin</a>
+          </div>
+        </div>
+        <div class="hidden text-right md:block">
+          <div class="text-2xl w-full mb-2">
+            <a class="hover-border-b-2" href="#screen-2">benefits</a>
+          </div>
+          <div class="text-2xl mb-2">
+            <a class="hover-border-b-2" href="#screen-3">team</a>
+          </div>
+          <div class="text-2xl mb-2">
+            <a class="hover-border-b-2" href="#screen-footer">contact</a>
+          </div>
         </div>
       </div>
     </div>
