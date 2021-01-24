@@ -11,24 +11,38 @@
           <nav class="hidden uppercase font-medium h-20 lg:flex text-right items-center text-3xl">
             <div class="h-auto w-auto">
               <a class="m-2 font-bold hover-border-b-2" href="https://startop.substack.com">newsletter</a>
-              <a class="m-2 hover-border-b-2" href="#screen-2">benefits</a>
-              <a class="m-2 hover-border-b-2" href="#screen-3">team</a>
+              <a class="m-2 text-red-900" href="#">portfolio</a>
               <a class="m-2 hover-border-b-2" href="#screen-footer">contact</a>
             </div>
           </nav>
         </div>
-        <div id="text" class="w-full">
-          <h1 class="w-full font-bold text-6xl md:text-8xl text-center">The Boston Startup Newsletter</h1>
+        <!-- DESKTOP  -->
+        <div class="hidden h-full lg:grid grid-cols-2 items-center align-middle">
+          <div id="text" class="max-w-prose w-full col-span-1 text-center m-auto items-center justify-center content-center">
+            <div class="mb-6"><h1 class="w-full font-bold text-8xl">The Boston Startup Newsletter</h1></div>
+            <div class="mb-6"><h3 class="w-full font-normal text-4xl">A weekly newsletter containing curated entrepreneurial focused content for students, founders and friends.</h3></div>
+            <div id="subscription-form" class="col-span-1 w-full overflow-hidden flex content-center justify-center items-center">
+              <iframe src="https://startop.substack.com/embed" width="400" height="160" class="-mb-10 -mr-14 -mt-6" style="margin-left:-3.70rem; background:transparent;" frameborder="0" scrolling="no"></iframe>
+            </div>
+          </div>
+          <div id="preview" class="overflow-hidden align-middle m-auto sm:justify-center items-center content-center flex">
+            <img class="rounded-xl w-3/4 h-auto m-auto" :src="require(`~/assets/images/preview.png`)"/>
+          </div>
         </div>
-        <div id="subscription-form" class="w-full overflow-hidden mx-auto flex flex-col content-center justify-center items-center">
-          <iframe src="https://startop.substack.com/embed" width="400" height="80" class="-mb-2" style="background:transparent;" frameborder="0" scrolling="no"></iframe>
+        <!-- MOBILE -->
+        <div id="text" class="w-full max-w-prose text-center lg:hidden">
+          <div class="mb-6"><h1 class="w-full font-bold text-6xl md:text-8xl">The Boston Startup Newsletter</h1></div>
+          <div><h3 class="w-full font-normal text-2xl">A weekly newsletter containing curated entrepreneurial focused content for students, founders and friends.</h3></div>
+        </div>
+        <div id="subscription-form" class="lg:hidden w-full overflow-hidden mx-auto flex flex-col content-center justify-center items-center">
+          <iframe src="https://startop.substack.com/embed" width="400" height="130" class="-mb-10" style="background:transparent;" frameborder="0" scrolling="no"></iframe>
           <span class="w-full text-center text-2xl italic">... or you can read it <a class="underline" href="https://startop.substack.com/">here</a>!</span>
         </div>
       </div>
-      <div id="screen-2" class="screen-full">
+      <div id="screen-2" class="bg-black bg-opacity-60 screen-full">
         <h2 class="w-full font-bold text-5xl mb-4 md:mb-24 md:text-7xl text-center">Why subscribe?</h2>
         <div class="md:grid md:grid-cols-2 md:gap-8 md:gap-x-12 text-3xl align-middle items-center justify-items-around">
-          <card-feature 
+          <card-feature
                 titleText="Follow the Trends" 
                 mainText="Learn about 10 to 15 most innovative startups per week in Boston community."
                 imagePath="icons/trend.svg" />
@@ -46,7 +60,7 @@
                 imagePath="icons/user_group.svg" />
         </div>
       </div>
-      <div id="screen-3" class="screen-full">
+      <div id="screen-3" class="bg-black bg-opacity-60 screen-full">
         <h2 class="w-full font-bold text-5xl mb-4 md:mb-16 md:text-7xl text-center">Our team</h2>
         <div class="md:flex md:flex-wrap lg:grid lg:grid-cols-5 lg:gap-4 align-middle items-center justify-items-around justify-center">
           <card-profile
@@ -72,7 +86,7 @@
         </div>
       </div>
       <div id="screen-footer" class="screen-full bg-black md:grid text-gray-300 md:grid-cols-2 lg:grid-cols-3">
-        <div class="mb-6">
+        <div class="mb-6 md:mb-0">
           <iframe src="https://startop.substack.com/embed" width="400" height="130" class="-mb-10 -mx-12 -mt-6" style="background:transparent;" frameborder="0" scrolling="no"></iframe>
         </div>
         <div class="hidden lg:block">
@@ -86,7 +100,7 @@
             <a class="hover-border-b-2" href="https://startop.substack.com">newsletter</a>
           </div>
            <div class="text-2xl w-full mb-2">
-            <a class="hover-border-b-2" href="mailto:">someemail@something.com</a>
+            <a class="hover-border-b-2" href="mailto:marley.al@northeaster.edu">marley.al@northeastern.edu</a>
           </div>
         </div>
       </div>
