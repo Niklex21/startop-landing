@@ -11,7 +11,8 @@
           <nav class="hidden uppercase font-medium h-20 lg:flex text-right items-center text-3xl">
             <div class="h-auto w-auto">
               <a class="m-2 font-bold hover-border-b-2" href="https://startop.substack.com">newsletter</a>
-              <a class="m-2 text-red-900" href="#">portfolio</a>
+              <!-- <a class="m-2 text-red-900" href="#">portfolio</a> -->
+              <a class="m-2 hover-border-b-2" href="#screen-3">team</a>
               <a class="m-2 hover-border-b-2" href="#screen-footer">contact</a>
             </div>
           </nav>
@@ -40,15 +41,15 @@
         </div>
       </div>
       <div id="screen-2" class="bg-black bg-opacity-60 screen-full">
-        <h2 class="w-full font-bold text-5xl mb-4 md:mb-24 md:text-7xl text-center">Why subscribe?</h2>
+        <h2 class="w-full font-bold text-5xl mb-4 md:mb-24 md:text-7xl text-center">Why Subscribe?</h2>
         <div class="md:grid md:grid-cols-2 md:gap-8 md:gap-x-12 text-3xl align-middle items-center justify-items-around">
           <card-feature
                 titleText="Follow the Trends"
-                mainText="Learn about 10 to 15 most innovative startups per week in Boston community."
+                mainText="Learn about 10 to 15 of the most innovative startups per week in Boston community."
                 imagePath="icons/trend.svg" />
           <card-feature
                 titleText="Job Opportunities"
-                mainText="Gain exposure to internships & job opportunities with the early-stage startups."
+                mainText="Gain exposure to internships and job opportunities with the early-stage startups."
                 imagePath="icons/work.svg" />
           <card-feature
                 titleText="Join the Community"
@@ -56,12 +57,12 @@
                 imagePath="icons/idea.svg" />
           <card-feature
                 titleText="Become Involved"
-                mainText="Engage with founders and innovators shaping the future in Boston and the world."
+                mainText="Engage with founders and innovators shaping the future of Boston and the world."
                 imagePath="icons/user_group.svg" />
         </div>
       </div>
       <div id="screen-3" class="bg-black bg-opacity-60 screen-full">
-        <h2 class="w-full font-bold text-5xl mb-4 md:mb-16 md:text-7xl text-center">Our team</h2>
+        <h2 class="w-full font-bold text-5xl mb-4 md:mb-16 md:text-7xl text-center">Our Team</h2>
         <div class="md:flex md:flex-wrap lg:grid lg:grid-cols-5 lg:gap-4 align-middle items-center justify-items-around justify-center">
           <card-profile
            imagePath="profile_pictures/alex_marley.jpg"
@@ -82,7 +83,7 @@
           <card-profile
            imagePath="profile_pictures/alex.jpg"
            name="Alex Nikanov"
-           title="Web developer" />
+           title="Web Developer" />
         </div>
       </div>
       <div id="screen-footer" class="screen-full bg-black md:grid text-gray-300 md:grid-cols-2 lg:grid-cols-3">
@@ -97,11 +98,14 @@
             <a class="hover-border-b-2" href="https://www.linkedin.com/company/thestartop/">linkedin</a>
           </div>
           <div class="text-2xl mb-2">
+            <a class="hover-border-b-2" href="https://www.instagram.com/thestartop_/">instagram</a>
+          </div>
+          <div class="text-2xl mb-2">
             <a class="hover-border-b-2" href="https://startop.substack.com">newsletter</a>
           </div>
-           <div class="text-2xl w-full mb-2">
+          <!-- <div class="text-2xl w-full mb-2">
             <a class="hover-border-b-2 text-gray-600" href="mailto:">email@coming.soon</a>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
