@@ -45,7 +45,7 @@
         <div class="md:grid md:grid-cols-2 md:gap-8 md:gap-x-12 text-3xl align-middle items-center justify-items-around">
           <card-feature
                 titleText="Follow the Trends"
-                mainText="Learn about 10 to 15 of the most innovative startups per week in Boston community."
+                mainText="Learn about 10 to 15 of the most innovative startups per week in the Boston community."
                 imagePath="icons/trend.svg" />
           <card-feature
                 titleText="Job Opportunities"
