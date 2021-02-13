@@ -6,8 +6,10 @@
     <div class="absolute top-0 w-full">
       <div id="screen-1" class="screen-screen">
         <div id="header" class="flex content-center justify-center items-center md:content-start md:justify-items-start md:justify-between md:items-start w-full h-auto">
-          <img class="block mx-auto lg:hidden h-28 md:h-40" src="/logo.png" alt="logo" />
-          <img class="hidden lg:block h-20" src="/banner.png" alt="banner" />
+          <a href="/">
+            <img class="block mx-auto lg:hidden h-28 md:h-40" src="/logo.png" alt="logo" />
+            <img class="hidden lg:block h-20" src="/banner.png" alt="banner" />
+          </a>
           <nav class="hidden uppercase font-medium h-20 lg:flex text-right items-center text-3xl">
             <div class="h-auto w-auto">
               <a class="m-2 font-bold hover-border-b-2" href="https://startop.substack.com">newsletter</a>
@@ -36,7 +38,7 @@
           <div><h3 class="w-full font-normal text-2xl">A weekly newsletter containing curated entrepreneurial focused content for students, founders and friends.</h3></div>
         </div>
         <div id="subscription-form" class="lg:hidden w-full overflow-hidden mx-auto flex flex-col content-center justify-center items-center">
-          <iframe src="https://startop.substack.com/embed" width="400" height="80" class="-mb-2 overflow-hidden" style="background:transparent;" frameborder="0" scrolling="no"></iframe>
+          <iframe src="https://startop.substack.com/embed" width="400" height="120" class="-mb-2 overflow-hidden" style="background:transparent;" frameborder="0" scrolling="no"></iframe>
           <span class="w-full text-center text-2xl italic">... or you can read it <a class="underline" href="https://startop.substack.com/">here</a>!</span>
         </div>
       </div>
