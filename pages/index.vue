@@ -29,7 +29,7 @@
             </div>
           </div>
           <div id="preview" class="overflow-hidden align-middle m-auto sm:justify-center items-center content-center flex">
-            <img class="rounded-xl w-3/4 h-auto m-auto" :src="require(`~/assets/images/preview.png`)"/>
+            <a href="https://startop.substack.com/"> <img class="rounded-xl w-3/4 h-auto m-auto" :src="require(`~/assets/images/preview.png`)"/> </a>
           </div>
         </div>
         <!-- MOBILE -->
