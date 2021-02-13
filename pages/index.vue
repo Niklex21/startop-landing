@@ -36,7 +36,7 @@
           <div><h3 class="w-full font-normal text-2xl">A weekly newsletter containing curated entrepreneurial focused content for students, founders and friends.</h3></div>
         </div>
         <div id="subscription-form" class="lg:hidden w-full overflow-hidden mx-auto flex flex-col content-center justify-center items-center">
-          <iframe src="https://startop.substack.com/embed" width="400" height="130" class="-mb-10" style="background:transparent;" frameborder="0" scrolling="no"></iframe>
+          <iframe src="https://startop.substack.com/embed" width="400" height="80" class="-mb-2 overflow-hidden" style="background:transparent;" frameborder="0" scrolling="no"></iframe>
           <span class="w-full text-center text-2xl italic">... or you can read it <a class="underline" href="https://startop.substack.com/">here</a>!</span>
         </div>
       </div>
