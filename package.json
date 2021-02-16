@@ -19,7 +19,7 @@
     "webpack": "^5.21.2"
   },
   "devDependencies": {
-    "@nuxt/types": "^2.14.6",
+    "@nuxt/types": "^2.15.0",
     "@nuxt/typescript-build": "^2.0.3",
     "@nuxtjs/svg": "^0.1.12",
     "@nuxtjs/tailwindcss": "^3.4.2"
