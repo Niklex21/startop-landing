@@ -23,7 +23,7 @@
         <div class="hidden h-full lg:grid grid-cols-2 items-center align-middle">
           <div id="text" class="max-w-prose w-full col-span-1 text-center m-auto items-center justify-center content-center">
             <div class="mb-6"><h1 class="w-full font-bold text-8xl">The Boston Startup Newsletter</h1></div>
-            <div class="mb-6"><h3 class="w-full font-normal text-4xl">A weekly newsletter containing curated entrepreneurial focused content for students, founders and friends.</h3></div>
+            <div class="mb-6"><h3 class="w-full font-normal text-4xl">A bi-weekly newsletter containing curated entrepreneurial focused content for students, founders and friends.</h3></div>
             <div id="subscription-form" class="col-span-1 w-full overflow-hidden flex content-center justify-center items-center">
               <iframe src="https://startop.substack.com/embed" width="400" height="160" class="-mb-10 -mr-14 -mt-6" style="margin-left:-3.70rem; background:transparent;" frameborder="0" scrolling="no"></iframe>
             </div>
@@ -35,7 +35,7 @@
         <!-- MOBILE -->
         <div id="text" class="w-full max-w-prose text-center lg:hidden">
           <div class="mb-6"><h1 class="w-full font-bold text-6xl md:text-8xl">The Boston Startup Newsletter</h1></div>
-          <div><h3 class="w-full font-normal text-2xl">A weekly newsletter containing curated entrepreneurial focused content for students, founders and friends.</h3></div>
+          <div><h3 class="w-full font-normal text-2xl">A bi-weekly newsletter containing curated entrepreneurial focused content for students, founders and friends.</h3></div>
         </div>
         <div id="subscription-form" class="lg:hidden w-full overflow-hidden mx-auto flex flex-col content-center justify-center items-center">
           <iframe src="https://startop.substack.com/embed" width="400" height="120" class="-mb-2 overflow-hidden" style="background:transparent;" frameborder="0" scrolling="no"></iframe>
@@ -47,7 +47,7 @@
         <div class="md:grid md:grid-cols-2 md:gap-8 md:gap-x-12 text-3xl align-middle items-center justify-items-around">
           <card-feature
                 titleText="Follow the Trends"
-                mainText="Learn about 10 to 15 of the most innovative startups per week in the Boston community."
+                mainText="Learn about 10 to 15 of the most innovative startups in the Boston community every two weeks."
                 imagePath="icons/trend.svg" />
           <card-feature
                 titleText="Job Opportunities"
@@ -55,7 +55,7 @@
                 imagePath="icons/work.svg" />
           <card-feature
                 titleText="Join the Community"
-                mainText="Get a curated list of the entrepreneurial events taking place in Boston each week."
+                mainText="Get a curated list of the entrepreneurial events taking place in Boston every two weeks."
                 imagePath="icons/idea.svg" />
           <card-feature
                 titleText="Become Involved"
