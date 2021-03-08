@@ -23,7 +23,7 @@
         <div class="hidden h-full lg:grid grid-cols-2 items-center align-middle">
           <div id="text" class="max-w-prose w-full col-span-1 text-center m-auto items-center justify-center content-center">
             <div class="mb-6"><h1 class="w-full font-bold text-8xl">The Boston Startup Newsletter</h1></div>
-            <div class="mb-6"><h3 class="w-full font-normal text-4xl">A weekly newsletter containing curated entrepreneurial focused content for students, founders and friends.</h3></div>
+            <div class="mb-6"><h3 class="w-full font-normal text-4xl">A bi-weekly newsletter containing curated entrepreneurial focused content for students, founders and friends.</h3></div>
             <div id="subscription-form" class="col-span-1 w-full overflow-hidden flex content-center justify-center items-center">
               <iframe src="https://startop.substack.com/embed" width="400" height="160" class="-mb-10 -mr-14 -mt-6" style="margin-left:-3.70rem; background:transparent;" frameborder="0" scrolling="no"></iframe>
             </div>
@@ -35,7 +35,7 @@
         <!-- MOBILE -->
         <div id="text" class="w-full max-w-prose text-center lg:hidden">
           <div class="mb-6"><h1 class="w-full font-bold text-6xl md:text-8xl">The Boston Startup Newsletter</h1></div>
-          <div><h3 class="w-full font-normal text-2xl">A weekly newsletter containing curated entrepreneurial focused content for students, founders and friends.</h3></div>
+          <div><h3 class="w-full font-normal text-2xl">A bi-weekly newsletter containing curated entrepreneurial focused content for students, founders and friends.</h3></div>
         </div>
         <div id="subscription-form" class="lg:hidden w-full overflow-hidden mx-auto flex flex-col content-center justify-center items-center">
           <iframe src="https://startop.substack.com/embed" width="400" height="120" class="-mb-2 overflow-hidden" style="background:transparent;" frameborder="0" scrolling="no"></iframe>
