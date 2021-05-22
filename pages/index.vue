@@ -5,20 +5,7 @@
     </div>
     <div class="absolute top-0 w-full">
       <div id="screen-1" class="screen-screen">
-        <div id="header" class="flex content-center justify-center items-center md:content-start md:justify-items-start md:justify-between md:items-start w-full h-auto">
-          <a href="/">
-            <img class="block mx-auto lg:hidden h-28 md:h-40" src="/logo.png" alt="logo" />
-            <img class="hidden lg:block h-20" src="/banner.png" alt="banner" />
-          </a>
-          <nav class="hidden uppercase font-medium h-20 lg:flex text-right items-center text-3xl">
-            <div class="h-auto w-auto">
-              <a class="m-2 font-bold hover-border-b-2" href="https://startop.substack.com">newsletter</a>
-              <!-- <a class="m-2 text-red-900" href="#">portfolio</a> -->
-              <a class="m-2 hover-border-b-2" href="#screen-3">team</a>
-              <a class="m-2 hover-border-b-2" href="#screen-footer">contact</a>
-            </div>
-          </nav>
-        </div>
+        <MainNavBar /> <!--- TODO #106 -->
         <!-- DESKTOP  -->
         <div class="hidden h-full lg:grid grid-cols-2 items-center align-middle">
           <div id="text" class="max-w-prose w-full col-span-1 text-center m-auto items-center justify-center content-center">
@@ -88,28 +75,7 @@
            title="Web Developer" />
         </div>
       </div>
-      <div id="screen-footer" class="screen-full bg-black md:grid text-gray-300 md:grid-cols-2 lg:grid-cols-3">
-        <div class="mb-6 md:mb-0">
-          <iframe src="https://startop.substack.com/embed" width="400" height="130" class="-mb-10 -mx-12 -mt-6" style="background:transparent;" frameborder="0" scrolling="no"></iframe>
-        </div>
-        <div class="hidden lg:block">
-          <img src="/banner.png" class="h-20 mx-auto w-auto" />
-        </div>
-        <div class="text-center md:text-right">
-          <div class="text-2xl mb-2">
-            <a class="hover-border-b-2" href="https://www.linkedin.com/company/thestartop/">linkedin</a>
-          </div>
-          <div class="text-2xl mb-2">
-            <a class="hover-border-b-2" href="https://www.instagram.com/thestartop_/">instagram</a>
-          </div>
-          <div class="text-2xl mb-2">
-            <a class="hover-border-b-2" href="https://startop.substack.com">newsletter</a>
-          </div>
-          <!-- <div class="text-2xl w-full mb-2">
-            <a class="hover-border-b-2 text-gray-600" href="mailto:">email@coming.soon</a>
-          </div> -->
-        </div>
-      </div>
+      <Footer />
     </div>
   </div>
 </template>
