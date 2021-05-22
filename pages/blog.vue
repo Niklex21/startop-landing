@@ -3,17 +3,20 @@
         <div class="absolute top-0 w-full">
             <div class="screen-full">
                 <MainNavBar />
-                <div id="blog-main" class="align-middle items-center flex flex-wrap">
+            </div>
+            <div class="screen-full">
+                <div id="blog-main">
                     <div v-if="error">
                         {{ error }}
                     </div>
-                    <ul v-else>
-                        <li v-for="article in articles" :key="article.id">
+                    <div v-else class="content-center flex flex-wrap gap-12 md:flex-row flex-col">
+                        <div v-for="article in articles" :key="article.id">
                             <CardArticle
-                                v-bind:textTitle="article.title"
-                                v-bind:textPreview="article.summary" />
-                        </li>
-                    </ul>
+                                v-bind:textTitle="article.Title"
+                                v-bind:textPreview="article.Summary"
+                                v-bind:author="article.admin_user" />
+                        </div>
+                    </div>
                 </div>
             </div>
             <LazyFooter />
