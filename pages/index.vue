@@ -45,19 +45,19 @@
       <div id="screen-2" class="bg-black bg-opacity-60 screen-full">
         <h2 class="w-full font-bold text-5xl mb-4 md:mb-24 md:text-7xl text-center">Why Subscribe?</h2>
         <div class="md:grid md:grid-cols-2 md:gap-8 md:gap-x-12 text-3xl align-middle items-center justify-items-around">
-          <card-feature
+          <CardFeature
                 titleText="Follow the Trends"
                 mainText="Learn about 10 to 15 of the most innovative startups in the Boston community every two weeks."
                 imagePath="icons/trend.svg" />
-          <card-feature
+          <CardFeature
                 titleText="Job Opportunities"
                 mainText="Gain exposure to internships and job opportunities with the early-stage startups."
                 imagePath="icons/work.svg" />
-          <card-feature
+          <CardFeature
                 titleText="Join the Community"
                 mainText="Get a curated list of the entrepreneurial events taking place in Boston every two weeks."
                 imagePath="icons/idea.svg" />
-          <card-feature
+          <CardFeature
                 titleText="Become Involved"
                 mainText="Engage with founders and innovators shaping the future of Boston and the world."
                 imagePath="icons/user_group.svg" />
@@ -66,23 +66,23 @@
       <div id="screen-3" class="bg-black bg-opacity-60 screen-full">
         <h2 class="w-full font-bold text-5xl mb-4 md:mb-16 md:text-7xl text-center">Our Team</h2>
         <div class="md:flex md:flex-wrap lg:grid lg:grid-cols-5 lg:gap-4 align-middle items-center justify-items-around justify-center">
-          <card-profile
+          <CardProfile
            imagePath="profile_pictures/alex_marley.jpg"
            name="Alex Marley"
            title="Founder" />
-          <card-profile
+          <CardProfile
            imagePath="profile_pictures/madyn_singh.jpeg"
            name="Madyn Singh"
            title="CMO" />
-          <card-profile
+          <CardProfile
            imagePath="profile_pictures/nina.jpg"
            name="Nina Miller"
            title="Graphic Designer" />
-          <card-profile
+          <CardProfile
            imagePath="profile_pictures/nate.jpeg"
            name="Nate Peters"
            title="Venture Director" />
-          <card-profile
+          <CardProfile
            imagePath="profile_pictures/alex.jpg"
            name="Alex Nikanov"
            title="Web Developer" />
