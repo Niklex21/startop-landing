@@ -75,7 +75,7 @@
            title="Web Developer" />
         </div>
       </div>
-      <Footer />
+      <LazyFooter />
     </div>
   </div>
 </template>
