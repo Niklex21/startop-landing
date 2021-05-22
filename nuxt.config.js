@@ -1,3 +1,5 @@
+const strapiBaseUrl = process.env.BACKEND_URL || "http://localhost:1337";
+
 export default {
   // Target (https://go.nuxtjs.dev/config-target)
   target: "static",
@@ -42,7 +44,7 @@ export default {
   // strapi config
   strapi: {
     entities: ['articles', 'categories'],
-    url: 'http://localhost:1337'
+    url: strapiBaseUrl
   },
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
