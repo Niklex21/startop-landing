@@ -41,7 +41,7 @@ export default {
 
   // strapi config
   strapi: {
-    entities: ['restaurants', 'categories'],
+    entities: ['articles', 'categories'],
     url: 'http://localhost:1337'
   },
 
