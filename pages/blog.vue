@@ -12,9 +12,11 @@
                     <div v-else class="content-center flex flex-wrap gap-12 md:flex-row flex-col">
                         <div v-for="article in articles" :key="article.id">
                             <CardArticle
-                                v-bind:textTitle="article.Title"
-                                v-bind:textPreview="article.Summary"
-                                v-bind:author="article.admin_user" />
+                                v-bind:textTitle="article.title"
+                                v-bind:textPreview="article.summary"
+                                v-bind:author="article.author"
+                                v-bind:categories="article.categories"
+                                v-bind:datePublished="article.published_at" />
                         </div>
                     </div>
                 </div>
