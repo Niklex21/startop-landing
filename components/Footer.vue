@@ -1,5 +1,5 @@
 <template>
-    <div id="screen-footer" class="screen-full bg-black md:grid text-gray-300 md:grid-cols-2 lg:grid-cols-3">
+    <div class="screen-full bg-black md:grid text-gray-300 md:grid-cols-2 lg:grid-cols-3">
         <div class="mb-6 md:mb-0">
             <iframe src="https://startop.substack.com/embed" width="400" height="130" class="-mb-10 -mx-12 -mt-6" style="background:transparent;" frameborder="0" scrolling="no"></iframe>
         </div>

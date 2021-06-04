@@ -1,16 +1,16 @@
 <template>
-    <div class="max-w-md overflow-hidden font-sans mb-10 mr-10" >
-      <NuxtLink :to="'/article/' + id">
+    <div class="max-w-sm overflow-hidden font-sans mb-10 mr-14" >
+      <NuxtLink :to="'/blog/article/' + id">
           <img class="w-full rounded-md hover:opacity-80" :src="require(`~/assets/images/${imagePreview}`)" alt="Image Preview">
       </NuxtLink>
       <div class="mt-4">
         <div class="flex flex-row text-lg opacity-80 mb-2">
             <span>{{ $moment(datePublished).format("MMMM DD, YYYY") }}</span>
             <span class="mx-auto"></span>
-            <span>By <NuxtLink :to="'/author/' + author.id" class="hover-border-b-2">{{ author.firstname }} {{ author.lastname }}</NuxtLink></span>
+            <span>By <NuxtLink :to="'/blog/author/' + author.id" class="hover-border-b-2">{{ author.firstname }} {{ author.lastname }}</NuxtLink></span>
         </div>
         <div class="text-3xl font-semibold mb-1">
-            <NuxtLink :to="'/article/' + id" class="hover:text-red-main">{{ textTitle }}</NuxtLink>
+            <NuxtLink :to="'/blog/article/' + id" class="hover:text-red-main">{{ textTitle }}</NuxtLink>
         </div>
         <div class="text-lg mb-3">
             {{ textPreview }}

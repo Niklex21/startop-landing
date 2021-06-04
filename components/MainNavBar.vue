@@ -9,7 +9,6 @@
                 <a class="m-2 font-bold hover-border-b-2" href="https://startop.substack.com">newsletter</a>
                 <NuxtLink class="m-2 hover-border-b-2" to="/">home</NuxtLink>
                 <NuxtLink class="m-2 hover-border-b-2" to="/blog">blog</NuxtLink>
-                <NuxtLink class="m-2 hover-border-b-2" to="/#screen-footer">contact</NuxtLink>
             </div>
         </nav>
     </div>

@@ -37,11 +37,16 @@ export default {
     // https://go.nuxtjs.dev/tailwindcss
     "@nuxtjs/tailwindcss",
     // for handling time
-    "@nuxtjs/moment"
+    "@nuxtjs/moment",
+    // for handling markdown
+    "@nuxtjs/markdownit"
   ],
 
   // Modules (https://go.nuxtjs.dev/config-modules)
-  modules: ['@nuxtjs/strapi'],
+  modules: [
+    '@nuxtjs/strapi',
+    '@nuxt/content'
+  ],
 
   // strapi config
   strapi: {
@@ -53,6 +58,14 @@ export default {
   moment: {
     timezone: true,
     defaultTimezone: 'America/Boston'
+  },
+
+  // markdownit config
+  markdownit: {
+    preset: 'default',
+    linkify: true,
+    breaks: true,
+    injected: true
   },
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
