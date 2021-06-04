@@ -7,7 +7,7 @@
         <div class="flex flex-row text-lg opacity-80 mb-2">
             <span>{{ $moment(datePublished).format("MMMM DD, YYYY") }}</span>
             <span class="mx-auto"></span>
-            <span>By <a href="#" class="hover-border-b-2">{{ author.firstname }} {{ author.lastname }}</a></span>
+            <span>By <NuxtLink :to="'/author/' + author.id" class="hover-border-b-2">{{ author.firstname }} {{ author.lastname }}</NuxtLink></span>
         </div>
         <div class="text-3xl font-semibold mb-1">
             <NuxtLink :to="'/article/' + id" class="hover:text-red-main">{{ textTitle }}</NuxtLink>
