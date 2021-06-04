@@ -9,9 +9,10 @@
                     <div v-if="error">
                         {{ error }}
                     </div>
-                    <div v-else class="content-center flex flex-wrap gap-12 md:flex-row flex-col">
+                    <div v-else class="content-center text-gray-800 flex flex-wrap md:flex-row-reverse flex-col-reverse">
                         <div v-for="article in articles" :key="article.id">
                             <CardArticle
+                                v-bind:id="article.id"
                                 v-bind:textTitle="article.title"
                                 v-bind:textPreview="article.summary"
                                 v-bind:author="article.author"
@@ -28,7 +29,6 @@
 
 <script>
     export default {
-        name: 'App',
         data () {
             return {
                 articles: [],

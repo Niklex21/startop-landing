@@ -24,6 +24,7 @@
   "devDependencies": {
     "@nuxt/types": "^2.15.0",
     "@nuxt/typescript-build": "^2.0.3",
+    "@nuxtjs/moment": "^1.6.1",
     "@nuxtjs/svg": "^0.1.12",
     "@nuxtjs/tailwindcss": "^3.4.2",
     "vue": "^2.6.12"

@@ -36,6 +36,8 @@ export default {
     "@nuxt/typescript-build",
     // https://go.nuxtjs.dev/tailwindcss
     "@nuxtjs/tailwindcss",
+    // for handling time
+    "@nuxtjs/moment"
   ],
 
   // Modules (https://go.nuxtjs.dev/config-modules)
@@ -45,6 +47,12 @@ export default {
   strapi: {
     entities: ['articles', 'categories'],
     url: strapiBaseUrl
+  },
+
+  // moment.js config
+  moment: {
+    timezone: true,
+    defaultTimezone: 'America/Boston'
   },
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)

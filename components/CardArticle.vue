@@ -1,17 +1,25 @@
 <template>
-    <div class="max-w-sm rounded-lg overflow-hidden shadow-lg">
-      <img class="w-full" :src="require(`~/assets/images/${imagePreview}`)" alt="Image Preview">
-      <div class="px-6 py-4">
-        <div class="font-bold text-xl mb-2">{{ textTitle }}</div>
-        <p class="font-medium text-lg mb-1">
-            Published on {{ datePublished }} by {{ author.firstname }} {{ author.lastname }}
-        </p>
-        <p class="text-gray-700 text-base">
+    <div class="max-w-md overflow-hidden font-sans mb-10 mr-10" >
+      <NuxtLink :to="'/article/' + id">
+          <img class="w-full rounded-md hover:opacity-80" :src="require(`~/assets/images/${imagePreview}`)" alt="Image Preview">
+      </NuxtLink>
+      <div class="mt-4">
+        <div class="flex flex-row text-lg opacity-80 mb-2">
+            <span>{{ $moment(datePublished).format("MMMM DD, YYYY") }}</span>
+            <span class="mx-auto"></span>
+            <span>By <a href="#" class="hover-border-b-2">{{ author.firstname }} {{ author.lastname }}</a></span>
+        </div>
+        <div class="text-3xl font-semibold mb-1">
+            <NuxtLink :to="'/article/' + id" class="hover:text-red-main">{{ textTitle }}</NuxtLink>
+        </div>
+        <div class="text-lg mb-3">
             {{ textPreview }}
-        </p>
-      </div>
-      <div class="px-6 pt-4 pb-2" v-for="category in categories" :key="category.id">
-        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">{{ category.name }}</span>
+        </div>
+        <div class="flex flex-row text-lg font-bold opacity-80">
+            <span v-for="category in categories" :key="category.id" class="mr-2 mb-2 text-red-main">
+                    <a href="#" class="hover-border-b-2">#{{ category.name }}</a>
+            </span>
+        </div>
       </div>
     </div>
 </template>
@@ -41,9 +49,8 @@
             datePublished: {
                 type: String
             },
-            link: {
-                type: String,
-                default: 'Link'
+            id: {
+                type: String
             },
         }
     }
