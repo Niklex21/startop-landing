@@ -6,8 +6,13 @@
     .text-red-main {
         color: theme('colors.red.main');
     }
+
     .border-red-main {
         border-color: theme('colors.red.main');
+    }
+
+    .prose-size {
+        @apply max-w-prose text-sm md:text-base lg:text-lg xl:text-2xl
     }
 
     .list-icon {

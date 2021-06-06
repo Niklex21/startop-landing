@@ -21,12 +21,12 @@
         </div>
         <!-- MOBILE -->
         <div id="text" class="w-full max-w-prose text-center lg:hidden">
-          <div class="mb-6"><h1 class="w-full font-bold text-6xl md:text-8xl">The Boston Startup Newsletter</h1></div>
-          <div><h3 class="w-full font-normal text-2xl">A bi-weekly newsletter containing curated entrepreneurial focused content for students, founders and friends.</h3></div>
+          <div class="mb-8"><h1 class="w-full font-bold text-6xl md:text-8xl">The Boston Startup Newsletter</h1></div>
+          <div><h3 class="w-full font-normal text-2xl md:text-4xl">A bi-weekly newsletter containing curated entrepreneurial focused content for students, founders and friends.</h3></div>
         </div>
         <div id="subscription-form" class="lg:hidden w-full overflow-hidden mx-auto flex flex-col content-center justify-center items-center">
           <iframe src="https://startop.substack.com/embed" width="400" height="120" class="-mb-2 overflow-hidden" style="background:transparent;" frameborder="0" scrolling="no"></iframe>
-          <span class="w-full text-center text-2xl italic">... or you can read it <a class="underline" href="https://startop.substack.com/">here</a>!</span>
+          <span class="w-full text-center text-2xl md:text-4xl italic">... or you can read it <a class="underline" href="https://startop.substack.com/">here</a>!</span>
         </div>
       </div>
       <div id="screen-2" class="bg-black bg-opacity-60 screen-full">
