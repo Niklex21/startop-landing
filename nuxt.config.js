@@ -45,8 +45,14 @@ export default {
   // Modules (https://go.nuxtjs.dev/config-modules)
   modules: [
     '@nuxtjs/strapi',
-    '@nuxt/content'
+    '@nuxtjs/cloudinary'
   ],
+
+  // cloudinary config
+  cloudinary: {
+    cloudName: 'startop',
+    useComponent: true
+  },
 
   // strapi config
   strapi: {

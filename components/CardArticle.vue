@@ -1,7 +1,10 @@
 <template>
-    <div class="max-w-sm overflow-hidden font-sans mb-10 mx-7" >
+    <div class="max-w-sm overflow-hidden font-sans" >
       <NuxtLink :to="'/blog/article/' + id">
-          <img class="w-full rounded-md hover:opacity-80" :src="require(`~/assets/images/${imagePreview}`)" alt="Image Preview">
+            <img v-if="imagePreview == 'default.jpg'" class="w-full rounded-md hover:opacity-80" :src="require(`~/assets/images/${imagePreview}`)" alt="Image Preview" />
+            <cld-image v-else class="w-full rounded-md hover:opacity-80" loading="lazy" :public-id="imagePreview" alt="Image Preview">
+                <cld-placeholder type="pixelate" />
+            </cld-image>
       </NuxtLink>
       <div class="mt-4">
         <div class="flex flex-row text-lg opacity-80 mb-2">

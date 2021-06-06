@@ -18,7 +18,10 @@
                         &#183; <!-- Do not remove, needed -->
                         <span>{{ article.estimatedReadTime }} min read</span>
                     </div>
-                    <img class="w-full mb-8" :src="require(`~/assets/images/default.jpg`)" alt="Image Preview">
+                    <img v-if="article.preview_picture == null" class="w-full mb-8" :src="require(`~/assets/images/default.jpg`)" alt="Image Preview">
+                    <cld-image v-else class="w-full mb-8" loading="lazy" :public-id="article.preview_picture.hash + article.preview_picture.ext" alt="Image Preview">
+                        <cld-placeholder type="pixelate" />
+                    </cld-image>
                     <article v-html="$md.render(article.content)" class="prose prose-red prose-sm md:prose lg:prose-lg xl:prose-2xl mb-8">
                     </article>
                 </div>
