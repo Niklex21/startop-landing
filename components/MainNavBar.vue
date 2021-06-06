@@ -1,7 +1,7 @@
 <template>
     <div id="header" class="flex content-center mx-auto justify-center items-center lg:content-start lg:justify-items-start lg:justify-between lg:items-start w-full h-auto">
         <NuxtLink to="/">
-            <img class="mx-auto block lg:hidden h-28 md:h-48" src="/logo.png" alt="logo" />
+            <img class="mx-auto block lg:hidden h-28 md:h-40" src="/logo.png" alt="logo" />
             <img class="hidden lg:block h-20" src="/banner.png" alt="banner" />
         </NuxtLink>
         <nav class="hidden uppercase font-medium h-20 lg:flex text-right items-center text-3xl">

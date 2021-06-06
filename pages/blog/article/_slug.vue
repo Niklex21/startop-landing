@@ -60,7 +60,7 @@
         },
         async mounted () {
             try {
-                this.article = (await this.$strapi.$articles.find({ id: this.$route.params.slug }))[0]
+                this.article = (await this.$strapi.$articles.findOne(this.$route.params.slug))
                 this.article.estimatedReadTime = getReadingTime(this.article.content)
                 this.loading = false
             } catch (error) {

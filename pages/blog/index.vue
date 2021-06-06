@@ -7,7 +7,7 @@
             <div v-if="error">
                 {{ error }}
             </div>
-            <div v-else class="content-center mx-auto text-gray-800 flex flex-wrap md:flex-row-reverse flex-col-reverse">
+            <div v-else class="content-center mx-auto text-gray-800 flex flex-wrap md:flex-row flex-col justify-center">
                 <div v-for="article in articles" :key="article.id">
                     <CardArticle
                         v-bind:id="article.id"
@@ -33,7 +33,7 @@
         },
         async mounted () {
             try {
-                this.articles = await this.$strapi.$articles.find()
+                this.articles = (await this.$strapi.$articles.find()).reverse()
             } catch (error) {
                 this.error = error
             }

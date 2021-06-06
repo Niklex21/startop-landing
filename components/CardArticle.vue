@@ -1,5 +1,5 @@
 <template>
-    <div class="max-w-sm overflow-hidden font-sans mb-10 mr-14" >
+    <div class="max-w-sm overflow-hidden font-sans mb-10 mx-7" >
       <NuxtLink :to="'/blog/article/' + id">
           <img class="w-full rounded-md hover:opacity-80" :src="require(`~/assets/images/${imagePreview}`)" alt="Image Preview">
       </NuxtLink>
@@ -9,7 +9,7 @@
             <span class="mx-auto"></span>
             <span>By <NuxtLink :to="'/blog/author/' + author.id" class="hover-border-b-2">{{ author.firstname }} {{ author.lastname }}</NuxtLink></span>
         </div>
-        <div class="text-3xl font-semibold mb-1">
+        <div class="text-2xl font-bold mb-1">
             <NuxtLink :to="'/blog/article/' + id" class="hover:text-red-main">{{ textTitle }}</NuxtLink>
         </div>
         <div class="text-lg mb-3">
