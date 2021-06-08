@@ -7,16 +7,13 @@
       <div id="screen-1" class="screen-screen">
         <MainNavBar /> <!--- TODO #106 -->
         <!-- DESKTOP  -->
-        <div class="hidden h-full lg:grid grid-cols-2 items-center align-middle">
-          <div id="text" class="max-w-prose w-full col-span-1 text-center m-auto items-center justify-center content-center">
+        <div class="hidden lg:flex w-full h-full align-middle">
+          <div id="text" class="max-w-prose w-full text-center m-auto items-center justify-center content-center">
             <div class="mb-6"><h1 class="w-full font-bold text-8xl">The Boston Startup Newsletter</h1></div>
             <div class="mb-6"><h3 class="w-full font-normal text-4xl">A bi-weekly newsletter containing curated entrepreneurial focused content for students, founders and friends.</h3></div>
-            <div id="subscription-form" class="col-span-1 w-full overflow-hidden flex content-center justify-center items-center">
+            <div id="subscription-form" class="w-full overflow-hidden flex content-center justify-center items-center">
               <iframe src="https://startop.substack.com/embed" width="400" height="160" class="-mb-10 -mr-14 -mt-6" style="margin-left:-3.70rem; background:transparent;" frameborder="0" scrolling="no"></iframe>
             </div>
-          </div>
-          <div id="preview" class="overflow-hidden align-middle m-auto sm:justify-center items-center content-center flex">
-            <a href="https://startop.substack.com/"> <img class="rounded-xl w-3/4 h-auto m-auto" :src="require(`~/assets/images/preview.png`)"/> </a>
           </div>
         </div>
         <!-- MOBILE -->
