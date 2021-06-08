@@ -22,7 +22,7 @@
                     <cld-image v-else class="w-full mb-8" loading="lazy" :public-id="article.preview_picture.hash + article.preview_picture.ext" alt="Image Preview">
                         <cld-placeholder type="pixelate" />
                     </cld-image>
-                    <article v-html="$md.render(article.content)" class="prose prose-red prose-sm md:prose lg:prose-lg xl:prose-2xl mb-8">
+                    <article v-html="$md.render(article.content)" class="prose prose-red md:prose lg:prose-lg xl:prose-2xl mb-8">
                     </article>
                 </div>
                 <div class="text-base md:text-lg lg:text-xl xl:text-2xl font-bold mb-8 flex flex-row">

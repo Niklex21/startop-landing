@@ -8,7 +8,7 @@
                 {{ error }}
             </div>
             <div v-else class="content-center mx-auto text-gray-800 flex flex-wrap md:flex-row flex-col justify-center">
-                <div v-for="article in articles" :key="article.id" class="mx-10 mb-12">
+                <div v-for="article in articles" :key="article.id" class="mx-10 mb-12 w-full md:w-auto">
                     <CardArticle
                         v-bind:id="article.id"
                         v-bind:textTitle="article.title"

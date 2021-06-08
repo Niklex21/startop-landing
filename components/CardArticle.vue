@@ -1,12 +1,15 @@
 <template>
-    <div class="max-w-sm overflow-hidden font-sans" >
-      <NuxtLink :to="'/blog/article/' + id">
-            <img v-if="imagePreview == 'default.jpg'" class="w-full rounded-md hover:opacity-80" :src="require(`~/assets/images/${imagePreview}`)" alt="Image Preview" />
-            <cld-image v-else class="w-full rounded-md hover:opacity-80" loading="lazy" :public-id="imagePreview" alt="Image Preview">
-                <cld-placeholder type="pixelate" />
-            </cld-image>
-      </NuxtLink>
+    <div class="w-full md:max-w-sm overflow-hidden font-sans" >
+        <div class="w-full">
+            <NuxtLink :to="'/blog/article/' + id">
+                <img v-if="imagePreview == 'default.jpg'" class="rounded-md hover:opacity-80" :src="require(`~/assets/images/${imagePreview}`)" alt="Image Preview" />
+                <cld-image v-else class="hover:opacity-80 w-full h-full" style="border-radius: 0.375rem;" crop="fill" quality="auto" loading="lazy" :public-id="imagePreview" alt="Image Preview">
+                    <cld-placeholder type="pixelate" />
+                </cld-image>
+            </NuxtLink>
+        </div>
       <div class="mt-4">
+        <!-- Desktop version -->
         <div class="flex flex-row text-lg opacity-80 mb-2">
             <span>{{ $moment(datePublished).format("MMMM DD, YYYY") }}</span>
             <span class="mx-auto"></span>
