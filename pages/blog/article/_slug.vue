@@ -9,7 +9,7 @@
         <div class="screen-full">
             <div class="text-gray-800"> <!-- everything has to be wrapped in a single div -->
                 <div class="prose-size mb-8 mx-auto">
-                    <div class="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-red-main w-full mb-8">{{ article.title }}</div>
+                    <div class="text-3xl md:text-4xl lg:text-5xl xl:text-5xl font-bold text-red-main w-full mb-8">{{ article.title }}</div>
                     <div class="text-base md:text-lg lg:text-xl xl:text-2xl w-full text-gray-400 mb-8">
                         <span>
                             <NuxtLink :to="'/blog/author/' + article.author.id" class="font-semibold underline md:no-underline text-gray-800 md:text-gray-400 hover:text-gray-800">{{ article.author.firstname }} {{ article.author.lastname }}</NuxtLink>

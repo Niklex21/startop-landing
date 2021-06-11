@@ -1,6 +1,6 @@
 <template>
     <div class="w-full md:max-w-sm overflow-hidden font-sans" >
-        <div class="w-full">
+        <div class="w-full overflow-hidden max-h-64 rounded-md">
             <NuxtLink :to="'/blog/article/' + id">
                 <img v-if="imagePreview == 'default.jpg'" class="rounded-md hover:opacity-80" :src="require(`~/assets/images/${imagePreview}`)" alt="Image Preview" />
                 <cld-image v-else class="hover:opacity-80 w-full h-full" style="border-radius: 0.375rem;" crop="fill" quality="auto" loading="lazy" :public-id="imagePreview" alt="Image Preview">
