@@ -1,7 +1,5 @@
 <template>
-    <div v-if="loading" class="text-5xl text-center my-auto font-bold text-red-main screen-screen">
-        Loading...
-    </div>
+    <LoadingScreen v-if="loading" />
     <div v-else class="font-sans text-base absolute top-0 w-full">
         <div class="screen-full text-red-main font-futura-pt">
             <MainNavBar />
