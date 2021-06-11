@@ -31,6 +31,10 @@
         @apply screen h-screen;
     }
 
+    .hover-full-opacity {
+        @apply opacity-60 hover:opacity-100
+    }
+
     .hover-no-border-b-2 {
         @apply border-b-2 border-solid border-current hover:border-transparent;
     }

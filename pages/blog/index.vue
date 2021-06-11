@@ -1,7 +1,7 @@
 <template>
     <div class="text-red-main font-futura-pt absolute top-0 w-full">
         <div class="screen-full">
-            <MainNavBar />
+            <MainNavBar activeLink="blog" />
         </div>
         <div class="screen-full">
             <div v-if="error">

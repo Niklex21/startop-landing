@@ -5,7 +5,7 @@
     </div>
     <div class="absolute top-0 w-full">
       <div id="screen-1" class="screen-screen">
-        <MainNavBar /> <!--- TODO #106 -->
+        <MainNavBar activeLink="home" /> <!--- TODO #106 -->
         <!-- DESKTOP  -->
         <div class="hidden lg:flex w-full h-full align-middle">
           <div id="text" class="max-w-prose w-full text-center m-auto items-center justify-center content-center">

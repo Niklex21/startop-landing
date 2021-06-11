@@ -6,10 +6,25 @@
         </NuxtLink>
         <nav class="hidden uppercase font-medium h-20 lg:flex text-right items-center text-3xl">
             <div class="h-auto w-auto">
-                <a class="m-2 font-bold hover-border-b-2" href="https://startop.substack.com">newsletter</a>
-                <NuxtLink class="m-2 hover-border-b-2" to="/">home</NuxtLink>
-                <NuxtLink class="m-2 hover-border-b-2" to="/blog">blog</NuxtLink>
+                <a id="newsletter" class="m-2 font-bold hover-full-opacity" href="https://startop.substack.com">newsletter</a>
+                <NuxtLink v-if="activeLink != 'home'" id="home" class="m-2 hover-full-opacity" to="/">home</NuxtLink>
+                <span v-else class="m-2">home</span>
+                <NuxtLink v-if="activeLink != 'blog'" id="blog" :class="'m-2 hover-full-opacity ' + {active: activeLink == 'blog'}" to="/blog">blog</NuxtLink>
+                <span v-else class="m-2">blog</span>
             </div>
         </nav>
     </div>
 </template>
+
+<script>
+    export default {
+        props: {
+            activeLink: {
+                type: String,
+                validator: (value) => {
+                    return ['home', 'blog'].indexOf(value) !== -1
+                }
+            }
+        }
+    }
+</script>
