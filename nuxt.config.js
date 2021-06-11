@@ -56,7 +56,7 @@ export default {
 
   // strapi config
   strapi: {
-    entities: ['articles', 'categories'],
+    entities: ['articles', 'categories', 'authors'],
     url: strapiBaseUrl
   },
 

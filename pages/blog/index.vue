@@ -1,5 +1,6 @@
 <template>
-    <div class="text-red-main font-futura-pt absolute top-0 w-full">
+    <LoadingScreen v-if="loading" />
+    <div v-else class="text-red-main font-futura-pt absolute top-0 w-full">
         <div class="screen-full">
             <MainNavBar activeLink="blog" />
         </div>
@@ -29,14 +30,17 @@
         data () {
             return {
                 articles: [],
-                error: null
+                error: null,
+                loading: true
             }
         },
         async mounted () {
             try {
                 this.articles = (await this.$strapi.$articles.find()).reverse()
+                this.loading = false
             } catch (error) {
                 this.error = error
+                this.loading = false
             }
         }
     }
