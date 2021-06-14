@@ -12,16 +12,11 @@
                 {{ title }}
             </div>
             <!-- Social icons -->
-            <div v-if="socials" class="flex flex-wrap justify-center space-x-6">
-                <SocialIcon
-                    v-if="socials.website"
-                    iconSet="fas"
-                    iconName="globe"
-                    :link="socials.website" />
-
+            <div v-if="socials" class="flex flex-wrap justify-center">
                 <div v-for="(item, key, index) in socials" :key="index">
                     <SocialIcon
-                        :iconName="key"
+                        :iconSet="key == 'website' ? 'fas' : 'fab'"
+                        :iconName="key == 'website' ? 'globe' : key"
                         :link="item" />
                 </div>
             </div>

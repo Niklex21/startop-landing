@@ -65,19 +65,17 @@
            name="Nate Peters"
            title="Venture Director"
            :socials="{
-             linkedin: 'http://www.linkedin.com/in/alex-marley',
-             instagram: 'https://www.instagram.com/thealexmarley/',
-             twitter: 'https://twitter.com/thealexmarley'
+             linkedin: 'https://www.linkedin.com/in/petersnate/',
             }" />
           <CardProfile
            imagePath="profile_pictures/alex.jpg"
            name="Alex Nikanov"
            title="Tech Director"
            :socials="{
+             website: 'https://alexnikanov.me/',
              linkedin: 'http://www.linkedin.com/in/alex-nikanov',
              github: 'https://github.com/niklex21',
              twitter: 'https://twitter.com/NikanovAlex',
-             website: 'https://alexnikanov.me/'
             }" />
         </div>
       </div>
