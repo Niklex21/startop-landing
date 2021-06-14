@@ -29,7 +29,7 @@
                     </div>
                     <div class="text-base md:text-lg lg:text-xl xl:text-2xl font-bold mb-8 flex flex-row">
                         <span v-for="category in article.categories" :key="category.id">
-                            <NuxtLink to="#">
+                            <NuxtLink :to="'/blog/category/' + category.id">
                                 <span class="mr-2 mb-2 rounded-sm md:opacity-60 hover:opacity-100 bg-gray-200 px-3 py-1">
                                     {{ category.name }}
                                 </span>

@@ -23,7 +23,7 @@
         </div>
         <div class="flex flex-row text-lg font-bold opacity-80">
             <span v-for="category in categories" :key="category.id" class="mr-2 mb-2 text-red-main">
-                    <a href="#" class="hover-border-b-2">#{{ category.name }}</a>
+                    <NuxtLink :to="'/blog/category/' + category.id" class="hover-border-b-2">#{{ category.name }}</NuxtLink>
             </span>
         </div>
       </div>
