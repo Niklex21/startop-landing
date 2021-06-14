@@ -54,15 +54,31 @@
           <CardProfile
            imagePath="profile_pictures/alex_marley.jpg"
            name="Alex Marley"
-           title="Founder" />
+           title="Founder"
+           :socials="{
+             linkedin: 'http://www.linkedin.com/in/alex-marley',
+             instagram: 'https://www.instagram.com/thealexmarley/',
+             twitter: 'https://twitter.com/thealexmarley'
+            }" />
           <CardProfile
            imagePath="profile_pictures/nate.jpeg"
            name="Nate Peters"
-           title="Venture Director" />
+           title="Venture Director"
+           :socials="{
+             linkedin: 'http://www.linkedin.com/in/alex-marley',
+             instagram: 'https://www.instagram.com/thealexmarley/',
+             twitter: 'https://twitter.com/thealexmarley'
+            }" />
           <CardProfile
            imagePath="profile_pictures/alex.jpg"
            name="Alex Nikanov"
-           title="Tech Director" />
+           title="Tech Director"
+           :socials="{
+             linkedin: 'http://www.linkedin.com/in/alex-nikanov',
+             github: 'https://github.com/niklex21',
+             twitter: 'https://twitter.com/NikanovAlex',
+             website: 'https://alexnikanov.me/'
+            }" />
         </div>
       </div>
       <LazyFooter />

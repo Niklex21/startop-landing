@@ -39,7 +39,9 @@ export default {
     // for handling time
     "@nuxtjs/moment",
     // for handling markdown
-    "@nuxtjs/markdownit"
+    "@nuxtjs/markdownit",
+    // for icons
+    '@nuxtjs/fontawesome'
   ],
 
   // Modules (https://go.nuxtjs.dev/config-modules)
@@ -72,6 +74,14 @@ export default {
     linkify: true,
     breaks: true,
     injected: true
+  },
+
+  // FontAwesome configuration
+  fontawesome: {
+    icons: {
+      solid: true,
+      brands: true
+    }
   },
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)

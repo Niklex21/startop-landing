@@ -1,21 +1,36 @@
 <template>
     <figure class="rounded-xl p-8">
-        <img class="rounded-full h-36 md:w-40 md:h-40 lg:w-48 lg:h-48 mx-auto" :src="require(`~/assets/images/${imagePath}`)"/>
-        <figcaption class="pt-6 text-center space-y-2 text-xl md:text-2xl">
-            <div class="font-extrabold">
+        <div 
+            class="bg-center bg-no-repeat bg-cover hover:bg-white hover:bg-opacity-70 rounded-full h-36 w-36 md:w-40 md:h-40 lg:w-48 lg:h-48 mx-auto aspect-w-48 aspect-h-48"
+            :style="'background-image: url(' + require(`~/assets/images/${imagePath}`) + ');'">
+        </div>
+        <figcaption class="mt-6 text-center text-xl md:text-2xl">
+            <div class="font-bold mb-2">
                 {{ name }}
             </div>
-            <div class="font-medium">
+            <div class="mb-4">
                 {{ title }}
+            </div>
+            <!-- Social icons -->
+            <div v-if="socials" class="flex flex-wrap justify-center space-x-6">
+                <SocialIcon
+                    v-if="socials.website"
+                    iconSet="fas"
+                    iconName="globe"
+                    :link="socials.website" />
+
+                <div v-for="(item, key, index) in socials" :key="index">
+                    <SocialIcon
+                        :iconName="key"
+                        :link="item" />
+                </div>
             </div>
         </figcaption>
     </figure>
 </template>
 
-<script lang="ts">
-    import Vue from 'vue';
-
-    export default Vue.extend({
+<script>
+    export default {
         props: {
             imagePath: {
                 type: String,
@@ -28,7 +43,10 @@
             title: {
                 type: String,
                 default: ''
+            },
+            socials: {
+                type: Object
             }
         }
-    })
+    }
 </script>
