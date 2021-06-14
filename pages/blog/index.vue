@@ -11,13 +11,13 @@
             <div v-else class="content-center mx-auto text-gray-800 flex flex-wrap md:flex-row flex-col justify-center">
                 <div v-for="article in articles" :key="article.id" class="mx-10 mb-12 w-full md:w-auto">
                     <CardArticle
-                        v-bind:id="article.id"
-                        v-bind:textTitle="article.title"
-                        v-bind:textPreview="article.summary"
-                        v-bind:author="article.author"
-                        v-bind:categories="article.categories"
-                        v-bind:datePublished="article.published_at"
-                        v-bind:imagePreview="article.preview_picture != null ? article.preview_picture.hash + article.preview_picture.ext : 'default.jpg'" />
+                        :id="article.id"
+                        :textTitle="article.title"
+                        :textPreview="article.summary"
+                        :author="article.author"
+                        :categories="article.categories"
+                        :datePublished="article.published_at"
+                        :imagePreview="article.preview_picture != null ? article.preview_picture.hash + article.preview_picture.ext : 'default.jpg'" />
                 </div>
             </div>
         </div>
