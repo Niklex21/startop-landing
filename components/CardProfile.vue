@@ -1,6 +1,6 @@
 <template>
     <figure class="rounded-xl p-8">
-        <div 
+        <div
             class="bg-center bg-no-repeat bg-cover hover:bg-white hover:bg-opacity-70 rounded-full h-36 w-36 md:w-40 md:h-40 lg:w-48 lg:h-48 mx-auto aspect-w-48 aspect-h-48"
             :style="'background-image: url(' + require(`~/assets/images/${imagePath}`) + ');'">
         </div>
