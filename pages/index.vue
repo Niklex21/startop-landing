@@ -66,6 +66,7 @@
            title="Venture Director"
            :socials="{
              linkedin: 'https://www.linkedin.com/in/petersnate/',
+             twitter: 'https://twitter.com/thenatepeters'
             }" />
           <CardProfile
            imagePath="profile_pictures/alex.jpg"
