@@ -12,7 +12,7 @@
     "@nuxt/typescript-runtime": "^2.0.1",
     "@tailwindcss/postcss7-compat": "npm:@tailwindcss/postcss7-compat",
     "autoprefixer": "^9",
-    "core-js": "^3.10.2",
+    "core-js": "^3.15.0",
     "nuxt": "^2.15.0",
     "postcss": "^7",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat",
