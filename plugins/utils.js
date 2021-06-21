@@ -6,8 +6,7 @@
  * @returns the estimated read time, in minutes
  */
 function getReadingTime(text) {
-  return Math.ceil(text.split(' ').length /
-                   200); // 200 is the average WPM read speed
+  return Math.ceil(text.split(" ").length / 200); // 200 is the average WPM read speed
 }
 
-export {getReadingTime}
+export { getReadingTime };
