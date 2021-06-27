@@ -16,6 +16,7 @@
     "@tailwindcss/aspect-ratio": "^0.2.1",
     "@tailwindcss/postcss7-compat": "npm:@tailwindcss/postcss7-compat",
     "@tailwindcss/typography": "^0.4.1",
+    "@vue-hero-icons/outline": "^1.7.2",
     "autoprefixer": "^9",
     "core-js": "^3.8.3",
     "nuxt": "^2.15.0",
@@ -33,7 +34,6 @@
     "@nuxtjs/fontawesome": "^1.1.2",
     "@nuxtjs/moment": "^1.6.1",
     "@nuxtjs/svg": "^0.1.12",
-    "@nuxtjs/tailwindcss": "^3.4.2",
-    "vue": "^2.6.12"
+    "@nuxtjs/tailwindcss": "^3.4.2"
   }
 }
