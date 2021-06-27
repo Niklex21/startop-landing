@@ -20,7 +20,7 @@
     }
 
     .screen {
-        @apply content-between relative flex flex-wrap p-8 md:p-12 justify-around align-middle items-center w-full;
+        @apply content-between flex flex-wrap p-8 md:p-12 justify-around align-middle items-center w-full;
     }
 
     .screen-full {
@@ -32,7 +32,7 @@
     }
 
     .hover-full-opacity {
-        @apply opacity-60 hover:opacity-100
+        @apply opacity-60 hover:opacity-100 transition duration-100 ease-in-out
     }
 
     .hover-no-border-b-2 {
