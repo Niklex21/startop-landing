@@ -9,6 +9,9 @@
                 {{ error }}
             </div>
             <div v-else class="content-center mx-auto text-gray-800 flex flex-wrap md:flex-row flex-col justify-center">
+                <span class="mb-20 text-5xl md:text-6xl lg:text-7xl flex w-full content-center font-bold text-red-main">
+                    <p class="flex text-center mx-auto">Our blog</p>
+                </span>
                 <div v-for="article in articles" :key="article.id" class="mx-10 mb-12 w-full md:w-auto">
                     <CardArticle
                         :id="article.id"

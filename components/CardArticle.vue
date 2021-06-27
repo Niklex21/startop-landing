@@ -9,7 +9,6 @@
             </NuxtLink>
         </div>
       <div class="mt-4">
-        <!-- Desktop version -->
         <div class="flex flex-row text-lg opacity-80 mb-2">
             <span>{{ $moment(datePublished).format("MMMM DD, YYYY") }}</span>
             <span class="mx-auto"></span>
