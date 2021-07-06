@@ -16,7 +16,7 @@
     "nuxt": "^2.15.0",
     "postcss": "^7",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat",
-    "webpack": "^5.22.0"
+    "webpack": "^5.42.1"
   },
   "devDependencies": {
     "@nuxt/types": "^2.15.0",
