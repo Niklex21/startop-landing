@@ -1,3 +1,5 @@
+const strapiBaseUrl = process.env.BACKEND_URL || "http://localhost:1337";
+
 export default {
   // Target (https://go.nuxtjs.dev/config-target)
   target: "static",
@@ -34,10 +36,53 @@ export default {
     "@nuxt/typescript-build",
     // https://go.nuxtjs.dev/tailwindcss
     "@nuxtjs/tailwindcss",
+    // for handling time
+    "@nuxtjs/moment",
+    // for handling markdown
+    "@nuxtjs/markdownit",
+    // for icons
+    '@nuxtjs/fontawesome'
   ],
 
   // Modules (https://go.nuxtjs.dev/config-modules)
-  modules: [],
+  modules: [
+    '@nuxtjs/strapi',
+    '@nuxtjs/cloudinary'
+  ],
+
+  // cloudinary config
+  cloudinary: {
+    cloudName: 'startop',
+    useComponent: true
+  },
+
+  // strapi config
+  strapi: {
+    entities: ['articles', 'categories', 'authors'],
+    url: strapiBaseUrl
+  },
+
+  // moment.js config
+  moment: {
+    timezone: true,
+    defaultTimezone: 'America/Boston'
+  },
+
+  // markdownit config
+  markdownit: {
+    preset: 'default',
+    linkify: true,
+    breaks: true,
+    injected: true
+  },
+
+  // FontAwesome configuration
+  fontawesome: {
+    icons: {
+      solid: true,
+      brands: true
+    }
+  },
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {},

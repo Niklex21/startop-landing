@@ -13,10 +13,18 @@ module.exports = {
         red: { main: "#ED202D" },
       },
       fontFamily: { "futura-pt": ["futura-pt", "mono"] },
+      screens: {
+        'lg': '1025px'
+      }
     },
   },
   variants: {
-    extend: {},
+    extend: {
+      backgroundImage: ['hover'],
+    },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/typography'),
+    require('@tailwindcss/aspect-ratio'),
+  ],
 };
